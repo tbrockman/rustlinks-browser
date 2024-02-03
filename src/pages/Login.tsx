@@ -8,7 +8,7 @@ import { OidcClient } from 'oidc-client-ts'
 export type NamedOidcClient = [string, OidcClient]
 
 type LoginProps = {
-    oidc_clients: NamedOidcClient[],
+    oidcClients: NamedOidcClient[],
     [key: string]: any
 }
 
@@ -18,7 +18,7 @@ const buttonOIDCOptionMap = new Map<string, ({ ...args }: ProviderLoginProps) =>
         ["Apple", AppleLogin]
     ])
 
-export default function Login({ oidc_clients, ...props }: LoginProps) {
+export default function Login({ oidcClients: oidc_clients, ...props }: LoginProps) {
 
     console.log('in login coomponent??')
 

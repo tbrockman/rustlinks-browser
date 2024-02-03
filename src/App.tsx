@@ -2,8 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-import './styles/index.scss'
-import favicon from '../public/favicon.png'
+import favicon from './favicon.png'
 
 import Home from './pages/Home'
 import NotFound from './pages/404'
@@ -22,7 +21,7 @@ const App: React.FC<Partial<AppProps>> = ({ login_path, oidc_providers, oauth_re
   }) || []
 
   const LoginComponent = () => {
-    return <Login oidc_clients={oidc_clients} />
+    return <Login oidcClients={oidc_clients} />
   }
 
   return (

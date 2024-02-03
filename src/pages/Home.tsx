@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchOrCreate from '../components/SearchOrCreate'
+import SearchOrCreate from '../components/SearchOrCreate/SearchOrCreate'
 
 const Home: React.FC = () => {
    return (
