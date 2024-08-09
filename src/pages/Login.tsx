@@ -20,8 +20,6 @@ const buttonOIDCOptionMap = new Map<string, ({ ...args }: ProviderLoginProps) =>
 
 export default function Login({ oidcClients: oidc_clients, ...props }: LoginProps) {
 
-    console.log('in login coomponent??')
-
     const buttons = oidc_clients.map(([provider_name, oidc_client]) => {
         const constructor = buttonOIDCOptionMap.get(provider_name)
         return constructor ? constructor({ oidc_client }) : <></>

@@ -17,6 +17,8 @@ const props: AppProps = (() => {
   return {}
 })()
 
+console.log('are we here at all?')
+
 if (process.env.NODE_ENV !== 'production') {
   render(
     <React.StrictMode>

@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+
+`yarn dlx @yarnpkg/sdks vscode`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
